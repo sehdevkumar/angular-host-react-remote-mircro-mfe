@@ -1,0 +1,35 @@
+/* styles.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  margin: 0;
+
+  li {
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #007bff;
+    }
+
+    &[routerLink="load-angular-mf1"] {
+      &:hover {
+        color: #28a745;
+      }
+    }
+
+    &[routerLink="load-react-mf2"] {
+      &:hover {
+        color: #ffc107;
+      }
+    }
+  }
+}
+
